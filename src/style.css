@@ -37,7 +37,7 @@ font-size: 16px;
 
   }
 .weather-temperature img {
-    margin-right: 10px;
+    margin-right: 5px;
     line-height: 1;
   
     height: 64px;
@@ -53,6 +53,10 @@ font-size: 16px;
     position: relative;
     font-size: 16px;
     top: -32px;
-    
+
+
+}
+small {
+    margin-left: 260px;
 
 }
