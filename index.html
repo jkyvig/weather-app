@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <link
       rel="stylesheet"
@@ -18,22 +19,22 @@
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <div class="overview">
-          <h1>New York</h1>
+          <h1 id="city">New York</h1>
           <ul>
             <li>Friday 1:00</li>
-            <li>Clear</li>
+            <li id="description"></li>
           </ul>
           </div>
           <div class="row">
             <div class="col-6">
-              <div class="clearfix weather-temperature">
+              <div class="d-flex weather-temperature">
               <img
                 src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
                 alt="Clear"
                 class="float-left"
               />
               <div class="float-left"></div>
-              <strong>12</strong><span class="units">°C |<a
+              <strong id="temperature"></strong><span class="units">°C |<a
                 href="#">°F</a></span>
             </div>
             </div>
@@ -41,15 +42,15 @@
             <div class="col-6">
               <ul>
                 <li>Precipitation: 0%</li>
-                <li>Humidity: 73%</li>
-                <li>Wind: 2km/h</li>
+                <li>Humidity: <span id = "humidity"></span>%</li>
+                <li>Wind: <span id = "wind"></span>km/h</li>
               </ul>
             </div>
           </div>
         </div>
         <small>
           <a
-            href="https://github.com/wecodeschool/vanilla-weather-app"
+            href="https://github.com/jkyvig/weather-app"
             target="_blank"
           >
             Open-source code</a
