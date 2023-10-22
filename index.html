@@ -34,7 +34,7 @@
           </form>
           <div class="overview">
           <h1 id="city"></h1>
-          <ul>
+          <ul class="now">
             <li>Last updated at <span id ="date"></span></li>
             <li id="description"></li>
           </ul>
@@ -50,14 +50,13 @@
               />
               <div class="float-left"></div>
               <strong id="temperature"></strong><span class="units"
-              ><a href="#" id="celsius-link">°C</a> |<a
+              ><a href="#" id="celsius-link" class="active">°C</a> |<a
                 href="#" id="fahrenheight-link">°F</a></span>
             </div>
             </div>
             </div>
             <div class="col-6">
-              <ul>
-                <li>Precipitation: 0%</li>
+              <ul class="description">
                 <li>Humidity: <span id = "humidity"></span>%</li>
                 <li>Wind: <span id = "wind"></span>km/h</li>
               </ul>
