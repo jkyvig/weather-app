@@ -32,6 +32,8 @@ font-size: 16px;
   .weather-app-wrapper {
     max-width: 600px;
     margin: 30px auto;
+
+
   }
   
   .weather-app {
@@ -41,16 +43,19 @@ font-size: 16px;
       background-color: greenyellow;
   }
   .overview {
-    margin-bottom: 20px;
+    margin-bottom: 80px;
 
   }
 .weather-temperature img {
+    margin-bottom: 100px;
+    margin-top: -50px;
     margin-right: 5px;
     height: 64px;
     width: 64px;
 
 }
 .weather-temperature strong {
+    margin-top: -50px;
     color: rgb(33, 33, 33);
     font-size: 64px;
     line-height: 1;
@@ -59,6 +64,7 @@ font-size: 16px;
     
 }
 .weather-temperature .units {
+    margin-top: -50px;
     position: relative;
     font-size: 16px;
     top: 2px;
@@ -71,8 +77,34 @@ font-size: 16px;
 .weather-temperature .active:hover {
     text-decoration: none;
 }
-    
 
+.description {
+    margin-bottom: 100px;
+    margin-left: 350px;
+    margin-top:  -150px
+
+}
+    
+.weather-forecast {
+    margin-top: -50px;
+    text-align: center;
+    color: #000;
+
+}
+.weather-forecast-date {
+    margin-top: -35px;
+    font-size: 16px;
+    color: #0000
+    opacity: 0.6;
+}
+
+.weather-forecast-temperature-min {
+    opacity: 0.5;
+
+}
+.weather-forecast-temperatures {
+    font-size: 13px;
+}
 
 
 small {
