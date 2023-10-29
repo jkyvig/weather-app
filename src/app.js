@@ -8,7 +8,7 @@ function formatDate(timestamp){
     if (minutes < 10){
         minutes = `0${minutes}`;
     }
-    let days =[
+    let days = [
         "Sunday",
         "Monday",
         "Tuesday",
@@ -56,8 +56,8 @@ function displayForecast(response) {
 }
 
 function getForecast(coordinates) {
-    console.log(coordinates)
-    let apiKey="cabdbda40038ba7d1165b953b1c7bd6c";
+
+    let apiKey="a95c2c6739994ba4903e007ee817e7d1";
     let apiURL = 
     `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
     axios.get(apiURL).then(displayForecast);
@@ -85,7 +85,7 @@ function getForecast(coordinates) {
     getForecast(response.data.coord);
 }
 function search(city) {
-    let apiKey = "cabdbda40038ba7d1165b953b1c7bd6c";
+    let apiKey = "a95c2c6739994ba4903e007ee817e7d1";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(displayTemperature);
 }
@@ -96,10 +96,8 @@ function handleSubmit(event) {
     search(cityInputElement.value);
 }
 
-
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
-
 
 search("New York");
 
